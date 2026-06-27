@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cattle health monitoring dashboard – feeding schedules, vaccinations, GPS tracking at Mandal Mahajan.">
+  <title>Monitoring | Mandal Mahajan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <header class="page-hero">
+      <div class="container fade-in">
+        <h1>Health Monitoring Dashboard</h1>
+        <p>Real-time insights into cattle health, feeding, vaccinations, and pasture management.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="overview-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Live Overview</span>
+          <h2 id="overview-heading" class="section-title">Sanctuary Health Summary</h2>
+        </div>
+        <div class="dashboard-grid fade-in">
+          <div class="metric-card">
+            <div class="metric-header">
+              <h4>Overall Health Score</h4>
+              <span style="color:var(--color-primary);">● Live</span>
+            </div>
+            <div class="metric-value">94%</div>
+            <div class="progress-bar"><div class="progress-fill" data-width="94"></div></div>
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-top:0.75rem;">482 of 512 cattle in excellent health</p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-header">
+              <h4>Vaccination Coverage</h4>
+            </div>
+            <div class="metric-value">89%</div>
+            <div class="progress-bar"><div class="progress-fill" data-width="89"></div></div>
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-top:0.75rem;">Next round scheduled: July 15, 2026</p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-header">
+              <h4>Feeding Compliance</h4>
+            </div>
+            <div class="metric-value">98%</div>
+            <div class="progress-bar"><div class="progress-fill" data-width="98"></div></div>
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-top:0.75rem;">All zones fed on schedule today</p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-header">
+              <h4>Under Treatment</h4>
+            </div>
+            <div class="metric-value" style="color:var(--color-earth);">18</div>
+            <div class="progress-bar"><div class="progress-fill" data-width="4" style="background:var(--color-earth);"></div></div>
+            <p style="font-size:0.85rem;color:var(--color-text-muted);margin-top:0.75rem;">3 in critical care unit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--bg-card);" aria-labelledby="feeding-heading">
+      <div class="container">
+        <div class="grid-2">
+          <div class="fade-in">
+            <span class="section-label">Daily Schedule</span>
+            <h2 id="feeding-heading" class="section-title">Feeding Schedule</h2>
+            <div class="schedule-list">
+              <div class="schedule-item">
+                <span class="schedule-time">06:00</span>
+                <span class="schedule-detail">Morning green fodder – Zones A, B, C (180 cattle)</span>
+                <span class="schedule-status">Done</span>
+              </div>
+              <div class="schedule-item">
+                <span class="schedule-time">08:00</span>
+                <span class="schedule-detail">Calf nursery bottle feeding – 24 calves</span>
+                <span class="schedule-status">Done</span>
+              </div>
+              <div class="schedule-item">
+                <span class="schedule-time">12:00</span>
+                <span class="schedule-detail">Midday dry fodder & mineral mix – All zones</span>
+                <span class="schedule-status">Done</span>
+              </div>
+              <div class="schedule-item">
+                <span class="schedule-time">16:00</span>
+                <span class="schedule-detail">Evening pasture grazing – Zones D, E (132 cattle)</span>
+                <span class="schedule-status">Active</span>
+              </div>
+              <div class="schedule-item">
+                <span class="schedule-time">19:00</span>
+                <span class="schedule-detail">Special diet – Critical care unit (18 cattle)</span>
+                <span class="schedule-status">Pending</span>
+              </div>
+            </div>
+          </div>
+          <div class="chart-container fade-in">
+            <h3 style="margin-bottom:1rem;font-size:1.1rem;">Weekly Health Reports</h3>
+            <div class="chart-bars" role="img" aria-label="Bar chart showing weekly health scores">
+              <div>
+                <div class="chart-bar" data-height="85" style="height:0%;"></div>
+                <div class="chart-bar-label">Mon</div>
+              </div>
+              <div>
+                <div class="chart-bar" data-height="92" style="height:0%;"></div>
+                <div class="chart-bar-label">Tue</div>
+              </div>
+              <div>
+                <div class="chart-bar" data-height="88" style="height:0%;"></div>
+                <div class="chart-bar-label">Wed</div>
+              </div>
+              <div>
+                <div class="chart-bar" data-height="95" style="height:0%;"></div>
+                <div class="chart-bar-label">Thu</div>
+              </div>
+              <div>
+                <div class="chart-bar" data-height="91" style="height:0%;"></div>
+                <div class="chart-bar-label">Fri</div>
+              </div>
+              <div>
+                <div class="chart-bar" data-height="94" style="height:0%;"></div>
+                <div class="chart-bar-label">Sat</div>
+              </div>
+              <div>
+                <div class="chart-bar" data-height="96" style="height:0%;"></div>
+                <div class="chart-bar-label">Sun</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="vaccination-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Immunization</span>
+          <h2 id="vaccination-heading" class="section-title">Vaccination Status</h2>
+        </div>
+        <div class="grid-3 fade-in">
+          <div class="card">
+            <h3>FMD Vaccine</h3>
+            <p style="color:var(--color-text-muted);margin:0.5rem 0 1rem;">Foot and Mouth Disease</p>
+            <div class="metric-value" style="font-size:1.5rem;">456/512</div>
+            <div class="progress-bar"><div class="progress-fill" data-width="89"></div></div>
+          </div>
+          <div class="card">
+            <h3>Brucellosis</h3>
+            <p style="color:var(--color-text-muted);margin:0.5rem 0 1rem;">Bacterial infection prevention</p>
+            <div class="metric-value" style="font-size:1.5rem;">398/512</div>
+            <div class="progress-bar"><div class="progress-fill" data-width="78"></div></div>
+          </div>
+          <div class="card">
+            <h3>Anthrax Booster</h3>
+            <p style="color:var(--color-text-muted);margin:0.5rem 0 1rem;">Annual booster dose</p>
+            <div class="metric-value" style="font-size:1.5rem;">512/512</div>
+            <div class="progress-bar"><div class="progress-fill" data-width="100"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--bg-card);" aria-labelledby="gps-heading">
+      <div class="container">
+        <div class="grid-2">
+          <div class="fade-in">
+            <span class="section-label">Location Tracking</span>
+            <h2 id="gps-heading" class="section-title">GPS Pasture Monitoring</h2>
+            <p style="color:var(--color-text-muted);margin-bottom:1.5rem;">Track cattle movement across grazing zones with geo-fencing alerts for boundary breaches.</p>
+            <div class="gps-map-placeholder" role="img" aria-label="GPS map placeholder showing cattle locations">
+              <span>GPS Map Integration Placeholder</span>
+              <div class="gps-dot" aria-hidden="true"></div>
+              <div class="gps-dot" aria-hidden="true"></div>
+              <div class="gps-dot" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="fade-in">
+            <h3 style="margin-bottom:1.25rem;">Recent Health Alerts</h3>
+            <div class="schedule-list">
+              <div class="schedule-item" style="border-left-color:#856404;">
+                <span class="schedule-time">Today</span>
+                <span class="schedule-detail">Shiva (Kankrej) – Wound dressing required, temperature elevated</span>
+              </div>
+              <div class="schedule-item">
+                <span class="schedule-time">Yesterday</span>
+                <span class="schedule-detail">Zone B – Water trough maintenance completed</span>
+              </div>
+              <div class="schedule-item">
+                <span class="schedule-time">Jun 24</span>
+                <span class="schedule-detail">Parvati (Deoni) – Respiratory treatment showing improvement</span>
+              </div>
+              <div class="schedule-item">
+                <span class="schedule-time">Jun 22</span>
+                <span class="schedule-detail">12 new cattle quarantine health checks passed</span>
+              </div>
+              <div class="schedule-item">
+                <span class="schedule-time">Jun 20</span>
+                <span class="schedule-detail">Quarterly deworming program completed for Zone C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/monitoring.js"></script>
+</body>
+</html>
