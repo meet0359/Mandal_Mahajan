@@ -1,17 +1,19 @@
 :root {
-  --color-primary: #2d6a4f;
-  --color-primary-dark: #1b4332;
-  --color-primary-light: #40916c;
-  --color-secondary: #8b6914;
-  --color-earth: #6b4423;
-  --color-beige: #f5f0e8;
-  --color-beige-dark: #e8dfd0;
+  /* Warm gaushala palette — cream, earth-brown and terracotta/maroon
+     (tuned to match the Paliyad Panjrapol look: cream bg, brown text, red-maroon accent) */
+  --color-primary: #bf443c;        /* terracotta-maroon — buttons, links, accents */
+  --color-primary-dark: #8f2f2a;
+  --color-primary-light: #d9673f;  /* warm saffron-orange */
+  --color-secondary: #b8862f;      /* saffron / gold */
+  --color-earth: #6d5f48;
+  --color-beige: #f7eac7;          /* cream background */
+  --color-beige-dark: #ecd9ad;
   --color-white: #ffffff;
-  --color-text: #2c3e2d;
-  --color-text-muted: #5a6b5c;
-  --color-border: #d4cfc4;
-  --color-shadow: rgba(45, 106, 79, 0.12);
-  --color-shadow-hover: rgba(45, 106, 79, 0.22);
+  --color-text: #3f3527;           /* dark warm brown */
+  --color-text-muted: #6d5f48;
+  --color-border: #e3d3ad;
+  --color-shadow: rgba(74, 60, 42, 0.12);
+  --color-shadow-hover: rgba(74, 60, 42, 0.22);
 
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
@@ -25,19 +27,19 @@
   --nav-height: 72px;
 
   --bg-body: var(--color-beige);
-  --bg-card: var(--color-white);
-  --bg-nav: rgba(255, 255, 255, 0.95);
-  --bg-footer: var(--color-primary-dark);
+  --bg-card: #fffdf8;              /* warm white cards */
+  --bg-nav: rgba(255, 253, 248, 0.95);
+  --bg-footer: #3a2f20;            /* deep brown */
 }
 
 [data-theme="dark"] {
-  --color-text: #e8f0e9;
-  --color-text-muted: #a8b8aa;
-  --color-border: #3d5244;
+  --color-text: #f0e6d2;
+  --color-text-muted: #c4b495;
+  --color-border: #4a3c2a;
   --color-shadow: rgba(0, 0, 0, 0.3);
   --color-shadow-hover: rgba(0, 0, 0, 0.45);
-  --bg-body: #1a2420;
-  --bg-card: #243028;
-  --bg-nav: rgba(26, 36, 32, 0.97);
-  --bg-footer: #0f1612;
+  --bg-body: #241d14;
+  --bg-card: #2f2619;
+  --bg-nav: rgba(36, 29, 20, 0.97);
+  --bg-footer: #15100a;
 }

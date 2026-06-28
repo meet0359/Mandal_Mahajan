@@ -17,10 +17,10 @@ function initLoader() {
   if (!loader) return;
 
   window.addEventListener('load', () => {
-    setTimeout(() => loader.classList.add('hidden'), 600);
+    setTimeout(() => loader.classList.add('hidden'), 250);
   });
 
-  setTimeout(() => loader.classList.add('hidden'), 2500);
+  setTimeout(() => loader.classList.add('hidden'), 1400);
 }
 
 function initTheme() {
@@ -28,20 +28,24 @@ function initTheme() {
   const saved = localStorage.getItem('mm-theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+  const setIcon = name => {
+    if (toggle) toggle.innerHTML = typeof icon === 'function' ? icon(name) : '';
+  };
+
   if (saved === 'dark' || (!saved && prefersDark)) {
     document.documentElement.setAttribute('data-theme', 'dark');
-    if (toggle) toggle.textContent = '☀️';
+    setIcon('sun');
   }
 
   toggle?.addEventListener('click', () => {
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
     if (isDark) {
       document.documentElement.removeAttribute('data-theme');
-      toggle.textContent = '🌙';
+      setIcon('moon');
       localStorage.setItem('mm-theme', 'light');
     } else {
       document.documentElement.setAttribute('data-theme', 'dark');
-      toggle.textContent = '☀️';
+      setIcon('sun');
       localStorage.setItem('mm-theme', 'dark');
     }
   });
@@ -171,7 +175,7 @@ function showToast(message) {
     bottom: '2rem',
     left: '50%',
     transform: 'translateX(-50%)',
-    background: '#1b4332',
+    background: '#3a2f20',
     color: '#fff',
     padding: '1rem 2rem',
     borderRadius: '12px',

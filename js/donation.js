@@ -51,7 +51,7 @@ function showToast(message) {
     bottom: '2rem',
     left: '50%',
     transform: 'translateX(-50%)',
-    background: '#1b4332',
+    background: '#3a2f20',
     color: '#fff',
     padding: '1rem 2rem',
     borderRadius: '12px',
